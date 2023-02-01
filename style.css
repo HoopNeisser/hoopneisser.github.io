@@ -1,0 +1,397 @@
+/* Barra de navagación */
+
+.navbar {
+    padding: 0rem;
+    background-color: #f5f6f7;
+    width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    .navbar {
+        padding: 0.5rem;
+    }
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+    font-size: large;
+}
+
+.nav-link {
+    transition: all 0.07s;
+}
+
+.nav-link:hover {
+    border-bottom: 3px solid #0a0a23;
+}
+
+/* Experiencia */
+
+.experiencia {
+    padding: 100px 40px 60px 40px;
+}
+
+.experiencia-titulo {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badge-contenedor {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badge {
+    margin: 5px;
+}
+
+.experiencia i {
+    font-size: 2.5rem;
+    color: #7ade30;
+    background-color: #0a0a23;
+    padding: 10px 17px;
+    border-radius: 70%;
+}
+
+.experiencia .columna {
+    padding: 20px;
+    border: 2px solid #8080804d;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition: all 0.07s ease-in;
+}
+
+.experiencia .columna:hover {
+    color: white;
+    background-color: #1b1b32;
+}
+
+/* Pie de pagina (footer) */
+
+/* footer {
+    min-height: 500px;
+} */
+
+@media screen and (max-width: 767px) {
+    footer {
+        min-height: 550px;
+    }
+}
+
+.footer-logo {
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+}
+
+.footer-texto {
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-family: 'Cinzel', serif;
+}
+
+.iconos-redes-sociales a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all 0.07s ease-in;
+}
+
+.iconos-redes-sociales i{
+    color: white;
+    font-size: 1.5rem;
+    transform: 0.07s ease-in;
+}
+
+.iconos-redes-sociales a:hover{
+    background-color: white;
+    border: 2px solid rgb(13, 110, 253);
+}
+
+.iconos-redes-sociales a:hover i{
+    color: #1b1b32;
+}
+
+.derechos-de-autor {
+    font-size: 15px;
+    color: #aeaeae;
+    padding: 20px;
+}
+
+/* Adaptable responsive - sacar icono */
+
+@media screen and (max-width: 767px) {
+    .navbar-brand {
+        display: none;
+    }
+}
+
+/* Estilos generales */
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-family: 'Lora', serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.seccion-oscura {
+    color: white;
+    background-color: #1b1b32;
+}
+
+.seccion-clara {
+    color: black;
+    background-color: #f5f6f7;
+}
+
+.seccion-titulo {
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Lora', serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.seccion-descripcion {
+    font-size: 1.2rem;
+    color: #584e4e;
+}
+
+.seccion-texto {
+    font-size: 1.2rem;
+}
+
+.btn-info {
+    font-size: 1.1rem;
+    margin: 20px;
+    background-color: #0a0a23;
+    color: white;
+}
+
+.texto-negro {
+    color: black;
+}
+
+.texto-blanco {
+    color: white;
+}
+
+/* Seccion Hero */
+
+.hero {
+    background-color: #f5f6f7;
+    min-height: 450px;
+    text-align: center;
+    padding-top: 60px;
+}
+
+@media screen and (min-width: 767px) {
+    .hero {
+        padding-top: 95px;
+    }
+}
+
+.hero .seccion-lenguajes img{
+    width: auto;
+    height: auto;
+    max-width: 200px;
+    max-height: 200px;
+    padding: 20px 0px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (min-width: 1400px) {
+    .hero .seccion-lenguajes {
+        padding: 100px;
+    }
+}
+
+@media screen and (min-width: 1550px) {
+    .hero .seccion-lenguajes {
+        padding: 140px;
+    }
+}
+
+.hero .seccion-lenguajes img:hover {
+    max-width: 215px;
+    max-height: 215px;
+}
+
+.seccion-lenguajes {
+    padding: 1.5rem 2rem;
+}
+
+
+.hero-principal {
+    padding: 1.5rem 2rem;
+}
+
+/* Sobre mi */
+.sobre-mi {
+    height: 600px;
+    padding: 10px;
+}
+
+.sobre-mi .contenedor {
+    max-width: 600px;
+    text-align: center;
+}
+
+@media screen and (min-width: 700px) {
+    .hero-inferior-imagen {
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .sobre-mi {
+        height: 750px;
+        padding: 10px;
+    }
+}
+
+/* Foto perfil */
+
+.img-perfil {
+    height: 185px;
+    width: 200px;
+    margin: 20px;
+}
+
+.hero-principal h2 {
+    font-size: 1.5rem;
+    color: #615151;
+
+}
+
+/* Proyectos recientes */
+
+.proyectos-recientes {
+    padding: 80px 40px 40px 40px;
+}
+
+@media screen and (max-width: 767px) {
+    .proyectos-recientes {
+        padding: 50px 40px 40px 40px;
+    }
+}
+  
+.proyectos-recientes img {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.2s ease;
+}
+  
+.proyectos-contenedor {
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+  
+.overlay {
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+  
+.overlay p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+  
+.proyecto {
+    position: relative;
+}
+  
+.proyecto:hover img {
+    opacity: 0.2;
+}
+  
+.proyecto:hover .overlay {
+    opacity: 1;
+}
+  
+.overlay .iconos-contenedor {
+    display: flex;
+}
+  
+.overlay i {
+    color: black;
+    font-size: 60px;
+    margin: 10px;
+}
+
+/* Contacto */
+
+.contacto .container {
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 20px;
+}
+
+.contacto .rectangulo {
+    margin-top: -5rem;
+    background-color: rgb(13, 110, 253);
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px 1px;
+}
+
+.contacto .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contacto .descripcion {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.contacto button {
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1.25em 2em;
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.07s ease-in-out;
+}
+
+.contacto button i {
+    color: white;
+    font-size: 1.3rem;
+    transition: all 0.07s ease-in-out;
+}
+
+.contacto button:hover {
+    background-color: white;
+    color: black;
+}
+
+.contacto button:hover i {
+    color: black;
+}
